@@ -31,8 +31,17 @@ public class MainActivity extends AppCompatActivity {
 
         String url="https://concal-test.herokuapp.com/";//1650 0 143.6  163.8 0 1005 900.9 3
         Button btn=findViewById(R.id.btnPredict);
-        EditText input=findViewById(R.id.editTextInput);
+
         TextView output=findViewById(R.id.txtAnswer);
+        EditText input1=findViewById(R.id.editTextInput);
+        EditText input2=findViewById(R.id.editTextInput2);
+        EditText input3=findViewById(R.id.editTextInput3);
+        EditText input4=findViewById(R.id.editTextInput4);
+        EditText input5=findViewById(R.id.editTextInput5);
+        EditText input6=findViewById(R.id.editTextInput6);
+        EditText input7=findViewById(R.id.editTextInput7);
+        EditText input8=findViewById(R.id.editTextInput8);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     protected Map<String,String> getParams(){
                         Map<String,String> params=new HashMap<String,String>();
-                        params.put("inputs",input.getText().toString());
+                        String input=input1.getText().toString()+" "+input2.getText().toString()+" "+input3.getText().toString()+" "+input4.getText().toString()+" "+input5.getText().toString()+" "+input6.getText().toString()+" "+input7.getText().toString()+" "+input8.getText().toString();
+                        params.put("inputs",input);
                         return params;
                     }
                 };
