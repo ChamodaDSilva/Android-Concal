@@ -15,6 +15,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +27,7 @@
         android:layout_marginTop="408dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +39,7 @@
         android:layout_marginTop="472dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,8 +47,9 @@
         android:id="@+id/txtAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="624dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="616dp"
+        android:text="0.0 MPa"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +59,10 @@
         android:id="@+id/btnPredict"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="540dp"
         android:text="Calculate"
+        app:icon="@android:drawable/ic_menu_send"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,6 +74,7 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,6 +86,7 @@
         android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,6 +98,7 @@
         android:layout_marginTop="144dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,6 +110,7 @@
         android:layout_marginTop="204dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,6 +122,7 @@
         android:layout_marginTop="268dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -190,9 +200,21 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="488dp"
         android:text="Age (day)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="604dp"
+        android:text="Compressive Strength"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
