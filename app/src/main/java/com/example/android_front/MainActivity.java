@@ -42,6 +42,27 @@ public class MainActivity extends AppCompatActivity {
         EditText input7=findViewById(R.id.editTextInput7);
         EditText input8=findViewById(R.id.editTextInput8);
 
+        //buttons for + and -
+        Button minCement=findViewById(R.id.minCement);
+        Button maxCement=findViewById(R.id.maxCement);
+        Button minBlast=findViewById(R.id.minBlast);
+        Button maxBlast=findViewById(R.id.maxBlast);
+        Button minFly=findViewById(R.id.minFly);
+        Button maxFly=findViewById(R.id.maxFly);
+        Button minWater=findViewById(R.id.minWater);
+        Button maxWater=findViewById(R.id.maxWater);
+        Button minSuper=findViewById(R.id.minSuper);
+        Button maxSuper=findViewById(R.id.maxSuper);
+        Button minCoarse=findViewById(R.id.minCoarse);
+        Button maxCoarse=findViewById(R.id.maxCoarse);
+        Button minFine=findViewById(R.id.minFineAggregate);
+        Button maxFine=findViewById(R.id.maxFineAggregate);
+        Button minAge=findViewById(R.id.minAge);
+        Button maxAge=findViewById(R.id.maxAge);
+
+
+        LoadingDialog loadingDialog=new LoadingDialog(MainActivity.this);//loading
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,10 +75,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast toast=Toast.makeText(getApplicationContext(),"All should be a number",Toast.LENGTH_LONG);
                     toast.show();
 
-                }else if(input8.getText().toString().equals("0") ){
+                }else if(input8.getText().toString().equals("0")||input8.getText().toString().equals("0.0")){
                     Toast toast=Toast.makeText(getApplicationContext(),"Age can't be zero",Toast.LENGTH_LONG);
                     toast.show();
                 } else{
+                    loadingDialog.startLoadingDialog();
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -65,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                 JSONObject jsonObject = new JSONObject((response));
                                 String data = jsonObject.getString("output");
                                 output.setText(data.toString() + " MPa");
+                                loadingDialog.dismissDialog();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -92,6 +115,107 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //increment textfield value
+        maxCement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input1);
+            }
+        });
+        maxBlast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input2);
+            }
+        });
+        maxFly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input3);
+            }
+        });
+        maxWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input4);
+            }
+        });
+        maxSuper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input5);
+            }
+        });
+        maxCoarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input6);
+            }
+        });
+        maxFine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input7);
+            }
+        });
+        maxAge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                incrementNum(input8);
+            }
+        });
+
+        //decrement textfield
+        minCement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input1);
+            }
+        });
+        minBlast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input2);
+            }
+        });
+        minFly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input3);
+            }
+        });
+        minWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input4);
+            }
+        });
+        minSuper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input5);
+            }
+        });
+        minCoarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input6);
+            }
+        });
+        minFine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input7);
+            }
+        });
+        minAge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrementNum(input8);
+            }
+        });
+
+
     }
 
     private boolean notANumInRange(String strNum){
@@ -107,5 +231,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+    private void incrementNum(TextView textView){
+        Double newNum=Double.parseDouble(textView.getText().toString())+1;
+        textView.setText(newNum.toString());
+    }
+    private void decrementNum(TextView textView){
+        Double newNum=Double.parseDouble(textView.getText().toString())-1;
+        textView.setText(newNum.toString());
     }
 }

@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/CHAMODA/Desktop/AndroidFront/app/src/main/res/drawable/circlebackgroundbutton.xml" value="0.2475" />
         <entry key="..\:/Users/CHAMODA/Desktop/AndroidFront/app/src/main/res/layout-land/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/CHAMODA/Desktop/AndroidFront/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/CHAMODA/Desktop/AndroidFront/app/src/main/res/layout/custom_dialog.xml" value="0.2708333333333333" />
       </map>
     </option>
   </component>

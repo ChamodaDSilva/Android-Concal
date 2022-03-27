@@ -4,42 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDEFEF"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextInput6"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="340dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:minHeight="48dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput7"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="412dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput8"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="472dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,8 +63,9 @@
         android:id="@+id/btnPredict"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/circlebackgroundbutton"
         android:text="Calculate"
         app:icon="@android:drawable/ic_menu_send"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,61 +73,66 @@
 
     <EditText
         android:id="@+id/editTextInput"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput2"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="80dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput3"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="144dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput4"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="208dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput5"
-        android:layout_width="106dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="268dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -130,7 +140,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:text="Cement"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,8 +150,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
         android:text="Blast Furnace Slag"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -150,7 +160,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="156dp"
         android:text="Fly Ash"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,8 +170,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="216dp"
         android:text="Water"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -170,8 +180,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="268dp"
         android:text="Superplasticizer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -180,18 +190,18 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="340dp"
         android:text="Coarse Aggregate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/minFine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="408dp"
         android:text="Fine Aggregate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -200,8 +210,8 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="488dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="460dp"
         android:text="Age (day)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -215,6 +225,166 @@
         android:text="Compressive Strength"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minCement"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="32dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minFineAggregate"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="408dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minCoarse"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="340dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minSuper"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="272dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minWater"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="208dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minFly"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="144dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minBlast"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="84dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minAge"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="472dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxCement"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="32dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxAge"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="464dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxFineAggregate"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="408dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxCoarse"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="340dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxSuper"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="264dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxBlast"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="80dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxFly"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="144dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maxWater"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="204dp"
+        android:text="+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
